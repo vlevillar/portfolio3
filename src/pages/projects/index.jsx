@@ -1,11 +1,15 @@
-import Layout from "../layouts/Layout";
-import Head from "next/head";
-import { info } from "../data/info";
-import { useState } from "react";
+import Head from 'next/head'
+import { info } from '../../data/info'
+import "../../styles/style.css";
+import React, { useState } from 'react'
+import NavBar from '../../components/general/NavBar'
+import ProyectsWrapper from '../../components/general/ProyectsWrapper';
 
-export default function Home() {
-  const title = "Portfolio - Valentino Villar"
+export default function Projects() {
+  const title = "Projects - Valentino Villar"
   const description = info.ENG.about
+  const projects = info.projects
+  console.log(projects);
   const [currentLanguage, setCurrentLanguage] = useState('ENG');
 
   const updateLanguage = (language) => {
@@ -20,8 +24,18 @@ export default function Home() {
     localStorage.setItem('selectedLang', newLanguage);
     updateLanguage(newLanguage);
   };
-  
 
+  const featureProjects = info.projects.reduce((accumulator, project) => {
+    if (accumulator.length < 6 && project[currentLanguage]) {
+      accumulator.push(project[currentLanguage]);
+    }
+    return accumulator;
+  }, []);
+
+  function languageSwitch(spanish, english) {
+    return currentLanguage === "ESP" ? spanish : english;
+  }
+  
   return (
     <>
       <Head>
@@ -68,7 +82,11 @@ export default function Home() {
           crossOrigin="true"
         />
       </Head>
-      <Layout currentLanguage={currentLanguage} handleLanguageChange={handleLanguageChange}/>
+      <NavBar currentLanguage={currentLanguage} handleLanguageChange={handleLanguageChange} />
+      <main className='container'>
+        <h1 className='leading-[120px]'>{languageSwitch('Proyectos', 'Projects')}</h1>
+        <ProyectsWrapper projects={featureProjects} />
+      </main>
     </>
-  );
+  )
 }

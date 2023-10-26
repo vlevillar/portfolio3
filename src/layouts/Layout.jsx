@@ -13,22 +13,28 @@ export default function Layout ( {currentLanguage, handleLanguageChange} ) {
   const educationESP = info.education.map(item => item.ESP);
 
   const featureProjects = info.projects.reduce((accumulator, project) => {
-    if (accumulator.length < 6 && project.isFeatured) {
-      accumulator.push(project);
+    if (accumulator.length < 6 && project[currentLanguage].isFeatured) {
+      accumulator.push(project[currentLanguage]);
     }
     return accumulator;
   }, []);
+  
+  
+
+  function languageSwitch(spanish, english) {
+    return currentLanguage === "ESP" ? spanish : english;
+  }  
 
   return (
     <div>
       <NavBar currentLanguage={currentLanguage} handleLanguageChange={handleLanguageChange}/>
       <main className="container">
       <Hero currentLanguage={currentLanguage}/>
-      <Experience title={currentLanguage === "ESP" ? "EXPERIENCIA" : "EXPERIENCE"} details={currentLanguage === "ESP" ? experienceESP : experienceENG} currentLanguage={currentLanguage} isEducation={false}/>
-      <Experience title={currentLanguage === "ESP" ? "EDUCACIÓN" : "EDUCATION"} id="experience" details={currentLanguage === "ESP" ? educationESP : educationENG} currentLanguage={currentLanguage} isEducation={true}/>
+      <Experience title={languageSwitch('EXPERIENCIA', 'EXPERIENCE')} details={languageSwitch(experienceESP, experienceENG)} currentLanguage={currentLanguage} isEducation={false}/>
+        <Experience title={languageSwitch('EDUCACIÓN', 'EDUCATION')} id="experience" details={languageSwitch(educationESP, educationENG)} currentLanguage={currentLanguage} isEducation={true}/>
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>
-        <ProyectsWrapper projects={featureProjects} />
+        <ProyectsWrapper projects={featureProjects} currentLanguage={currentLanguage} />
       </section>
       </main>
       <Footer />
