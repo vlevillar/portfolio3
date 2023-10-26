@@ -4,7 +4,7 @@ import { info } from "../data/info";
 import { useState } from "react";
 
 export default function Home() {
-  const title = "Portfolio"
+  const title = "Portfolio - Valentino Villar"
   const description = info.ENG.about
   const [currentLanguage, setCurrentLanguage] = useState('ENG');
 
@@ -39,11 +39,11 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="canonical" href={`/`} />
-        {title && <title>{`${title} - ${info.name}`}</title>}
-        {title && <meta name="title" content={`${title} - ${info.ENG.name}`} />}
+        {title && <title>{`${title}`}</title>}
+        {title && <meta name="title" content={`${title}`} />}
         {description && <meta name="description" content={description} />}
         {title && <meta property="og:type" content="website" />}
-        {title && <meta property="og:title" content={`${title} - ${info.ENG.name}`} />}
+        {title && <meta property="og:title" content={`${title}`} />}
         {description && <meta property="og:description" content={description} />}
         {title && <meta property="twitter:card" content="summary_large_image" />}
         {
