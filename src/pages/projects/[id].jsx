@@ -13,10 +13,10 @@ export default function Projects() {
     const [currentLanguage, setCurrentLanguage] = useState('ENG');
     const title = "Projects - Valentino Villar"
     const projects = info.projects
-    const description = info[currentLanguage].about
+    const description = info[currentLanguage]?.about
     const router = useRouter()
     const { id } = router.query;
-    const project = projects.find((project) => project[currentLanguage].id === parseInt(id));
+    const project = projects.find((project) => project[currentLanguage]?.id === parseInt(id));
 
     const updateLanguage = (language) => {
         document.documentElement.setAttribute('data-language', language);
@@ -36,8 +36,8 @@ export default function Projects() {
     }
 
 
-    const carrouselFormatted = project[currentLanguage].carrousel
-    const tags = project[currentLanguage].tags
+    const carrouselFormatted = project[currentLanguage]?.carrousel
+    const tags = project[currentLanguage]?.tags
 
     return (
         <>
