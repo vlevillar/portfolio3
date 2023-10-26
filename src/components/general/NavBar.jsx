@@ -42,23 +42,23 @@ const NavBar = ( {currentLanguage, handleLanguageChange} ) => {
 
   return (
     <header className="container flex items-center justify-between h-[80px] sm:h-[123px]">
-      <a
+      <Link
         className="text-2xl dark:text-light font-semibold dark:font-semibold font-outfit"
         href="/"
       >
         VV.
-      </a>
+      </Link>
       <nav>
         <ul className="flex items-center">
           <li>
-            <a className="p-4 dark:text-light block text-lg" href="/projects">
+            <Link className="p-4 dark:text-light block text-lg" href="/projects">
               {currentLanguage === "ESP" ? "Proyectos" : "Projects"}
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="p-4 dark:text-light block text-lg" href="/contact">
+            <Link className="p-4 dark:text-light block text-lg" href="/contact">
             {currentLanguage === "ESP" ? "Contacto" : "Contact"}
-            </a>
+            </Link>
           </li>
           <li>
             <button

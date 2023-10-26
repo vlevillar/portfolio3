@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { info } from "../../data/info";
 
 export default function Footer () {
   return (
@@ -6,7 +7,7 @@ export default function Footer () {
       <div className="grid grid-cols-5 gap-4">
         <Link
           aria-label="Social Media"
-          //   href={info.socialMedia.twitter}
+          href={info.socialMedia.twitter}
           target="_blank"
           class="footer-icons"
         >
@@ -27,7 +28,7 @@ export default function Footer () {
         </Link>
         <Link
           aria-label="Social Media"
-          //   href={info.socialMedia.github}
+          href={info.socialMedia.github}
           target="_blank"
           class="footer-icons"
         >
@@ -48,7 +49,7 @@ export default function Footer () {
         </Link>
         <Link
           aria-label="Social Media"
-          //   href={info.socialMedia.linkedin}
+          href={info.socialMedia.linkedin}
           target="_blank"
           class="footer-icons"
         >
@@ -71,7 +72,7 @@ export default function Footer () {
         </Link>
         <Link
           aria-label="Social Media"
-          //   href={info.socialMedia.email}
+          href={info.socialMedia.email}
           target="_blank"
           class="footer-icons"
         >
@@ -93,7 +94,7 @@ export default function Footer () {
         </Link>
         <Link
           aria-label="Social Media"
-          //   href={info.socialMedia.facebook}
+          href={info.socialMedia.facebook}
           target="_blank"
           class="footer-icons"
         >
