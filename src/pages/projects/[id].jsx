@@ -10,10 +10,10 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 
 export default function Projects() {
-    const title = "Projects - Valentino Villar"
-    const description = info.ENG.about
-    const projects = info.projects
     const [currentLanguage, setCurrentLanguage] = useState('ENG');
+    const title = "Projects - Valentino Villar"
+    const projects = info.projects
+    const description = info[currentLanguage].about
     const router = useRouter()
     const { id } = router.query;
     const project = projects.find((project) => project[currentLanguage].id === parseInt(id));
