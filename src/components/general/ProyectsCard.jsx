@@ -10,7 +10,6 @@ export default function ProyectsCard({ projectDetail }) {
     const title = projectDetail.title
     const tags = projectDetail.tags
     const id = projectDetail.id
-    console.log(id);
 
     return (
         <article class="w-full max-h-[18rem] overflow-hidden relative group">

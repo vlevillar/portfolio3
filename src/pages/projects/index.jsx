@@ -9,7 +9,6 @@ export default function Projects() {
   const title = "Projects - Valentino Villar"
   const description = info.ENG.about
   const projects = info.projects
-  console.log(projects);
   const [currentLanguage, setCurrentLanguage] = useState('ENG');
 
   const updateLanguage = (language) => {
@@ -35,7 +34,7 @@ export default function Projects() {
   function languageSwitch(spanish, english) {
     return currentLanguage === "ESP" ? spanish : english;
   }
-  
+
   return (
     <>
       <Head>

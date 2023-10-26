@@ -24,6 +24,10 @@ export default function Projects() {
         browserLang.content = language;
     };
 
+    if (!project) {
+        return <div>Project not found</div>; // Puedes personalizar este mensaje de error
+    }
+
     const handleLanguageChange = () => {
         const newLanguage = currentLanguage === 'ENG' ? 'ESP' : 'ENG';
         setCurrentLanguage(newLanguage);
