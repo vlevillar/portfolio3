@@ -80,12 +80,12 @@ export default function ProyectsCard({ projectDetail }) {
             <div
                 class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700"
             >
-                <div className="flex pb-1">
+                <h3 class="mr-2 text-xl">{title}</h3>
+                <div className="flex pt-2">
                     {tags.map((tag, index) => (
                         <div key={index} className="mr-2 p-2 border-solid border-2 border-[#bababa] rounded-md text-xs text-[#bababa]" style={{ display: 'inline-block' }}>{tag}</div>
                     ))}
                 </div>
-                <h3 class="mr-2 text-xl">{title}</h3>
             </div>
         </article>
     )

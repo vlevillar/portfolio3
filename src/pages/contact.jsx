@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import { info } from '../../data/info'
-import "../../styles/style.css";
+import { info } from '../data/info'
+import "../styles/style.css";
 import React, { useState } from 'react'
-import NavBar from '../../components/general/NavBar'
-import ProyectsWrapper from '../../components/general/ProyectsWrapper';
+import NavBar from '../components/general/NavBar'
+import ProyectsWrapper from '../components/general/ProyectsWrapper';
 
 export default function Projects() {
-  const title = "Projects - Valentino Villar"
+  const title = "Contact - Valentino Villar"
   const description = info.ENG.about
-  const projects = info.projects
   const [currentLanguage, setCurrentLanguage] = useState('ENG');
 
   const updateLanguage = (language) => {
@@ -83,10 +82,8 @@ export default function Projects() {
       </Head>
       <NavBar currentLanguage={currentLanguage} handleLanguageChange={handleLanguageChange} />
       <main className='container'>
-        <div className='flex justify-center'>
-        <h1 className='leading-[120px] text-center'>{languageSwitch('Proyectos', 'Projects')}</h1>
-        </div>
-        <ProyectsWrapper projects={featureProjects} />
+        <h1 className='leading-[120px]'>{languageSwitch('Contacto', 'Contact')}</h1>
+        
       </main>
     </>
   )

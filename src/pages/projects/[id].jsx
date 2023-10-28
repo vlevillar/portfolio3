@@ -3,11 +3,12 @@ import { info } from '../../data/info'
 import "../../styles/style.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import NavBar from '../../components/general/NavBar'
-import ProyectsWrapper from '../../components/general/ProyectsWrapper';
+import Footer from '../../components/general/Footer';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Projects() {
     const [currentLanguage, setCurrentLanguage] = useState('ENG');
@@ -93,9 +94,36 @@ export default function Projects() {
             <main className='container'>
                 <div className='flex items-center justify-center'>
                     <h1 className='leading-[120px]'>{project[currentLanguage].title}</h1>
+                    <Link
+                        href={project[currentLanguage].liveUrl}
+                        class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
+                        aria-label="Social Media"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-link-2"
+                        >
+                            <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3" />
+                            <line x1="8" y1="12" x2="16" y2="12" />
+                        </svg>
+                    </Link>
                 </div>
+                <div className="flex p-4 justify-center pb-6">
+                        {tags.map((tag, index) => (
+                            <div key={index} className="mr-2 p-2 border-solid border-2 border-[#bababa] rounded-md text-xs text-[#bababa]" style={{ display: 'inline-block' }}>{tag}</div>
+                        ))}
+                    </div>
                 <section>
-                    <div className='max-w-xxl'>
+                    <div className='max-w-1/2'>
                         <Carousel
                             additionalTransfrom={0}
                             arrows
@@ -147,29 +175,25 @@ export default function Projects() {
                             swipeable
                         >
                             {carrouselFormatted.map((image, index) => (
-                                <Image key={index} src={image} width={1500} height={400} alt='carrousel' />
+                                <Image key={index} src={image} width={1500} height={500} alt='carrousel' />
                             ))}
                         </Carousel>
                     </div>
                 </section>
-                <section>
+                <section className='pb-4 dark:text-light'>
                     <div className='pt-8 flex justify-center align-middle'>
-                        <h2 className='dark:text-light text-3xl'>About</h2>
+                        <h2 className='dark:text-light text-6xl'><strong>{languageSwitch('Acerca de', 'About')} {' '} {project[currentLanguage].title}</strong></h2>
                     </div>
-                    <div className="flex p-4 justify-center">
-                    {tags.map((tag, index) => (
-                        <div key={index} className="mr-2 p-2 border-solid border-2 border-[#bababa] rounded-md text-xs text-[#bababa]" style={{ display: 'inline-block' }}>{tag}</div>
-                    ))}
-                </div>
-                    <div className='flex'>
-                        <div className='flex justify-center align-middle text-left w-1/2'>
-                            <p className='dark:text-light text-l'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam fuga saepe fugit expedita, quidem nulla provident obcaecati sapiente, vel perferendis animi quas, quis recusandae sunt impedit dolores similique. Fuga, at.</p>
-                        </div>
-                        <div className='flex justify-center align-middle text-left w-1/2'>
-                            <p className='dark:text-light text-l'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam fuga saepe fugit expedita, quidem nulla provident obcaecati sapiente, vel perferendis animi quas, quis recusandae sunt impedit dolores similique. Fuga, at.</p>
+
+                    <div className='flex pt-4'>
+                        <div className='flex flex-col justify-center align-middle text-left'>
+                            <p className='dark:text-gray text-l'>{project[currentLanguage].description}</p>
+                            <h3 class="text-xl font-semibold text-center py-4">{languageSwitch('Tecnologias usadas', 'Technologies used')}</h3>
+                            <p className='dark:text-gray text-l'>{project[currentLanguage].techUsed}</p>
                         </div>
                     </div>
                 </section>
+                <Footer />
             </main>
         </>
     )
