@@ -4,8 +4,23 @@ import sunIcon from '../../../public/assets/images/sunIcon.svg';
 import moonIcon from '../../../public/assets/images/moonIcon.svg';
 import Link from 'next/link';
 
-const NavBar = ( {currentLanguage, handleLanguageChange} ) => {
+const NavBar = ({ currentLanguage, handleLanguageChange }) => {
   const [isDark, setIsDark] = useState(false);
+  const [isCVMenuOpen, setIsCVMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const closeMenu = (event) => {
+      if (event.target.closest('button') !== document.querySelector('.cv-button')) {
+        setIsCVMenuOpen(false);
+      }
+    };
+  
+    document.addEventListener('click', closeMenu);
+  
+    return () => {
+      document.removeEventListener('click', closeMenu);
+    };
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = isDark ? 'light' : 'dark';
@@ -24,11 +39,8 @@ const NavBar = ( {currentLanguage, handleLanguageChange} ) => {
     }
   };
 
-  const scrollToExperience = () => {
-    const experienceElement = document.getElementById('experience'); // Asigna un id al componente Experience
-    if (experienceElement) {
-      experienceElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleCVButtonClick = () => {
+    setIsCVMenuOpen(!isCVMenuOpen);
   };
 
   useEffect(() => {
@@ -57,7 +69,7 @@ const NavBar = ( {currentLanguage, handleLanguageChange} ) => {
           </li>
           <li>
             <Link className="p-4 dark:text-light block text-lg" href="/contact">
-            {currentLanguage === "ESP" ? "Contacto" : "Contact"}
+              {currentLanguage === "ESP" ? "Contacto" : "Contact"}
             </Link>
           </li>
           <li>
@@ -72,13 +84,40 @@ const NavBar = ( {currentLanguage, handleLanguageChange} ) => {
           </li>
           <li>
             <button
-              // aria-label="theme-button"
-              // id="theme-button"
               className="dark:text-light rounded-lg p-[13px] ml-2 bg-slate-100 dark:bg-[#202020]"
               onClick={handleLanguageChange}
             >
               {currentLanguage}
             </button>
+          </li>
+          <li>
+            <button
+              className="cv-button dark:text-light rounded-lg p-[13px] ml-2 bg-slate-100 dark:bg-[#202020]"
+              onClick={handleCVButtonClick}
+            >
+              CV
+            </button>
+            {isCVMenuOpen && (
+              <div className="absolute dark:text-light rounded-lg bg-slate-100 dark:bg-[#202020] mt-2">
+                <a
+                  href="/path/to/spanish/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-gray-800 rounded-lg dark:text-white hover:bg-gray dark:hover:bg-dark-gray "
+                >
+                  ESP
+                </a>
+                <a
+                  href="/path/to/english/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-gray-800 rounded-lg dark:text-white hover:bg-gray dark:hover:bg-dark-gray"
+                >
+                  ENG
+                </a>
+              </div>
+            )}
+
           </li>
         </ul>
       </nav>
