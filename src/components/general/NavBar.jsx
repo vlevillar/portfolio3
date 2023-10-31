@@ -100,7 +100,7 @@ const NavBar = ({ currentLanguage, handleLanguageChange }) => {
             {isCVMenuOpen && (
               <div className="absolute dark:text-light rounded-lg bg-slate-100 dark:bg-[#202020] mt-2">
                 <a
-                  href="/path/to/spanish/cv.pdf"
+                  href="https://drive.google.com/file/d/1kUEttJ9udVtriprFCdBC3wJIn4Fz1fzi/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-gray-800 rounded-lg dark:text-white hover:bg-gray dark:hover:bg-dark-gray "
@@ -108,7 +108,7 @@ const NavBar = ({ currentLanguage, handleLanguageChange }) => {
                   ESP
                 </a>
                 <a
-                  href="/path/to/english/cv.pdf"
+                  href="https://drive.google.com/file/d/1V-YIyTheKUtPnKhzVI6_9LK1Hrx8J1t9/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-gray-800 rounded-lg dark:text-white hover:bg-gray dark:hover:bg-dark-gray"
