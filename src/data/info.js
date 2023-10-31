@@ -1,29 +1,17 @@
 export const info = {
   ENG: {
-    baseUrl: "https://astro-portfolio-uzair.vercel.app",
+    baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Web Developer",
-    about: `I'm a full-stack developer born in Cordoba, Argentina.
-    I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-    I have been working for 2 years, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-    I have 2 years of experience in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS and Next JS. Hence,
-    I have successfully completed several web projects from scratch. 
-    Yet, I learn continuously and never stop exploring new technologies.
-    So, I have also gained knowledge of Node JS, Express JS, Mongo DB, and React Native with time.
+    about: `Front-end developer born in Cordoba, Argentina, 2+ years of web development experience. Specializing in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, and Next JS. Several web projects have been successfully completed, with an ongoing commitment to learning and exploring new technologies. In addition, expertise has been gained in Node JS, Express JS, Mongo DB, and React Native over time.
    `,
   },
   ESP: {
-    baseUrl: "https://astro-portfolio-uzair.vercel.app",
+    baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Desarrollador Web",
-    about: `Soy un desarrollador full-stack nacido en Córdoba, Argentina.
-      Disfruto creando cosas que hay en internet, ya sean sitios web, aplicaciones o cualquier cosa que tenga que ver con el desarrollo.
-      Estuve trabajando durante 2 años, con un historial demostrado de trabajo en la industria del software. Soy un xperto en desarrollo front-end.
-      Tengo 2 años de experiencia en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS y Next JS. Por lo tanto,
-      completé con éxito varios proyectos web desde cero.
-      Sin embargo, aprendo continuamente y nunca dejo de explorar nuevas tecnologías.
-      Debido a esto, con el tiempo también he adquirido conocimientos de Node JS, Express JS, Mongo DB y React Native.
-      `,
+    about: `Desarrollador front-end nacido en Córdoba, Argentina, 2+ años de experiencia en desarrollo web. Especializado en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS y Next JS. Se han completado con éxito varios proyectos web, con un compromiso continuo de aprender y explorar nuevas tecnologías. Además, se ha adquirido experiencia en Node JS, Express JS, Mongo DB y React Native con el tiempo.
+    `,
   },
 
   experience: [
@@ -34,10 +22,7 @@ export const info = {
         startDate: "Apr 2022",
         endDate: "Present",
         description: [
-          "Collaborated on a Web3 project using modern tools like Next.js, React, and TypeScript. Enhanced user security with OAuth and gained valuable teamwork experience.",
-          "✓ Primary Focus: Implemented the user interface using Next.js, React, and TypeScript for an efficient and scalable web application.",
-          "✓ Collaborative Teamwork: Worked closely with the team to integrate OAuth-based authentication for secure and fast user access.",
-          "✓ Expertise in OAuth Integration: Demonstrated expertise in OAuth integration for user authentication.",
+          "As a front-end developer specializing in web3 development, I utilize cutting-edge technologies and tools, including Typescript, React, Next, Git, Mongo, and Scrum, to collaborate on key projects. Working within a large team, we foster a culture of daily collaboration, contributing to the growth of innovative projects. We constantly stay abreast of market trends and explore ways to stay at the forefront. Our notable achievements include consistently delivering projects on time and meeting client expectations, driven by my focus on efficient and precise task execution.",
         ],
       },
       ESP: {
@@ -46,10 +31,7 @@ export const info = {
         startDate: "Abr 2022",
         endDate: "Actualidad",
         description: [
-          "Colaboré en un proyecto Web3 utilizando herramientas modernas como Next.js, React y TypeScript. Mejoré la seguridad del usuario con OAuth y adquirí valiosa experiencia en trabajo en equipo.",
-          "✓ Enfoque Principal: Implementé la interfaz de usuario utilizando Next.js, React y TypeScript para una aplicación web eficiente y escalable.",
-          "✓ Trabajo en Equipo Colaborativo: Trabajé en estrecha colaboración con el equipo para integrar la autenticación basada en OAuth, garantizando un acceso seguro y rápido para los usuarios.",
-          "✓ Experiencia en Integración de OAuth: Demostré experiencia en la integración de OAuth para la autenticación de usuarios.",
+          "Como desarrollador front-end enfocado en el desarrollo de web3, empleo tecnologías y herramientas de vanguardia, como Typescript, React, Next, Git, Mongo, y Scrum, para colaborar en proyectos clave. Trabajar en un equipo grande nos permite colaborar estrechamente en la entrega diaria y contribuir al crecimiento de proyectos innovadores. Constantemente nos mantenemos al tanto de las tendencias del mercado y nos esforzamos por mantenernos a la vanguardia. Alcanzamos logros notables al entregar proyectos a tiempo y cumplir con las expectativas del cliente, gracias a mi enfoque en la ejecución eficiente y precisa de tareas.",
         ],
       },
     },
