@@ -172,6 +172,21 @@ export const info = {
     linkedin: "https://www.linkedin.com/in/vlevillar/",
   },
 
+  techStack:[
+    {name: 'HTML', img:'/assets/images/skills/html.svg'},
+    {name: 'CSS', img:'/assets/images/skills/css.svg'},
+    {name: 'Javascript', img:'/assets/images/skills/javascript.svg'},
+    {name: 'Typescript', img:'/assets/images/skills/typescript.svg'},
+    {name: 'Next', img:'/assets/images/skills/next-js.svg'},
+    {name: 'React', img:'/assets/images/skills/react.svg'},
+    {name: 'Redux', img:'/assets/images/skills/redux.svg'},
+    {name: 'Git', img:'/assets/images/skills/git.png'},
+    {name: 'MongoDb', img:'/assets/images/skills/mongodb.png'},
+    {name: 'NodeJs', img:'/assets/images/skills/nodejs.png'},
+    {name: 'PostgreSQL', img:'/assets/images/skills/postgresql.png'},
+    {name: 'SOLID', img:'/assets/images/skills/solid.png'},
+  ],
+
   projects: [
     {
       ENG: {

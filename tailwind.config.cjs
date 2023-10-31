@@ -7,7 +7,7 @@ module.exports = {
       colors: {
         dark: "#111111",
         light: "#FFFFFF",
-        blue: "#D61C4E",
+        blue: "#9f24ac",
         gray: "#C4C4C4",
         "dark-gray": "#1A1A1A",
       },
@@ -26,7 +26,7 @@ module.exports = {
             margin: "2rem 0",
             fontStyle: "normal", 
             fontWeight: 600,
-            background: "linear-gradient(89.81deg, #293462 -1.72%, #D61C4E 54.05%, #FEB139 99.78%)", 
+            background: "linear-gradient(89.81deg, #b230be -1.72%, #8c189a 54.05%, #660076 99.78%)", 
             "-webkit-background-clip": "text", 
             "-webkit-text-fill-color": "transparent", 
             "background-clip": "text", 
