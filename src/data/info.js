@@ -3,14 +3,14 @@ export const info = {
     baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Web Developer",
-    about: `Front-end developer born in Cordoba, Argentina, 2+ years of web development experience. Specializing in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, and Next JS. Several web projects have been successfully completed, with an ongoing commitment to learning and exploring new technologies. In addition, expertise has been gained in Node JS, Express JS, Mongo DB, and React Native over time.
+    about: `Front-end developer born in Cordoba, Argentina, 2+ years of web development experience. Specializing in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, and Next JS. Several web projects have been successfully completed, with an ongoing commitment to learning and exploring new technologies. In addition, expertise has been gained in Node JS, Express JS, Mongo DB, and React Native over time.
    `,
   },
   ESP: {
     baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Desarrollador Web",
-    about: `Desarrollador front-end nacido en Córdoba, Argentina, 2+ años de experiencia en desarrollo web. Especializado en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS y Next JS. Se han completado con éxito varios proyectos web, con un compromiso continuo de aprender y explorar nuevas tecnologías. Además, se ha adquirido experiencia en Node JS, Express JS, Mongo DB y React Native con el tiempo.
+    about: `Desarrollador front-end nacido en Córdoba, Argentina, 2+ años de experiencia en desarrollo web. Especializado en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, y Next JS. Se han completado con éxito varios proyectos web, con un compromiso continuo de aprender y explorar nuevas tecnologías. Además, se ha adquirido experiencia en Node JS, Express JS, Mongo DB y React Native con el tiempo.
     `,
   },
 
@@ -22,7 +22,7 @@ export const info = {
         startDate: "Apr 2022",
         endDate: "Present",
         description: [
-          "As a front-end developer specializing in web3 development, I utilize cutting-edge technologies and tools, including Typescript, React, Next, Git, Mongo, and Scrum, to collaborate on key projects. Working within a large team, we foster a culture of daily collaboration, contributing to the growth of innovative projects. We constantly stay abreast of market trends and explore ways to stay at the forefront. Our notable achievements include consistently delivering projects on time and meeting client expectations, driven by my focus on efficient and precise task execution.",
+          "As a front-end developer specializing in web3 development, I utilize cutting-edge technologies and tools, including Typescript, Vue, React, Next, Git, Mongo, and Scrum, to collaborate on key projects. Working within a large team, we foster a culture of daily collaboration, contributing to the growth of innovative projects. We constantly stay abreast of market trends and explore ways to stay at the forefront. Our notable achievements include consistently delivering projects on time and meeting client expectations, driven by my focus on efficient and precise task execution.",
         ],
       },
       ESP: {
@@ -31,7 +31,7 @@ export const info = {
         startDate: "Abr 2022",
         endDate: "Actualidad",
         description: [
-          "Como desarrollador front-end enfocado en el desarrollo de web3, empleo tecnologías y herramientas de vanguardia, como Typescript, React, Next, Git, Mongo, y Scrum, para colaborar en proyectos clave. Trabajar en un equipo grande nos permite colaborar estrechamente en la entrega diaria y contribuir al crecimiento de proyectos innovadores. Constantemente nos mantenemos al tanto de las tendencias del mercado y nos esforzamos por mantenernos a la vanguardia. Alcanzamos logros notables al entregar proyectos a tiempo y cumplir con las expectativas del cliente, gracias a mi enfoque en la ejecución eficiente y precisa de tareas.",
+          "Como desarrollador front-end enfocado en el desarrollo de web3, empleo tecnologías y herramientas de vanguardia, como Typescript, Vue, React, Next, Git, Mongo, y Scrum, para colaborar en proyectos clave. Trabajar en un equipo grande nos permite colaborar estrechamente en la entrega diaria y contribuir al crecimiento de proyectos innovadores. Constantemente nos mantenemos al tanto de las tendencias del mercado y nos esforzamos por mantenernos a la vanguardia. Alcanzamos logros notables al entregar proyectos a tiempo y cumplir con las expectativas del cliente, gracias a mi enfoque en la ejecución eficiente y precisa de tareas.",
         ],
       },
     },
@@ -161,6 +161,7 @@ export const info = {
     {name: 'Typescript', img:'/assets/images/skills/typescript.svg'},
     {name: 'Next', img:'/assets/images/skills/next-js.svg'},
     {name: 'React', img:'/assets/images/skills/react.svg'},
+    {name: 'Vue', img:'/assets/images/skills/vue.png'},
     {name: 'Redux', img:'/assets/images/skills/redux.svg'},
     {name: 'Git', img:'/assets/images/skills/git.png'},
     {name: 'MongoDb', img:'/assets/images/skills/mongodb.png'},
