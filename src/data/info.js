@@ -3,14 +3,14 @@ export const info = {
     baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Web Developer",
-    about: `Front-end developer born in Cordoba, Argentina, 2+ years of web development experience. Specializing in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, and Next JS. Several web projects have been successfully completed, with an ongoing commitment to learning and exploring new technologies. In addition, expertise has been gained in Node JS, Express JS, Mongo DB, and React Native over time.
+    about: `Front-end developer born in Cordoba, Argentina, 3+ years of web development experience. Specializing in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, and Next JS. Several web projects have been successfully completed, with an ongoing commitment to learning and exploring new technologies. In addition, expertise has been gained in Node JS, Express JS, Mongo DB, and React Native over time.
    `,
   },
   ESP: {
     baseUrl: "https://valentino-villar.vercel.app",
     name: "Valentino Villar",
     jobDescription: "Desarrollador Web",
-    about: `Desarrollador front-end nacido en Córdoba, Argentina, 2+ años de experiencia en desarrollo web. Especializado en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, y Next JS. Se han completado con éxito varios proyectos web, con un compromiso continuo de aprender y explorar nuevas tecnologías. Además, se ha adquirido experiencia en Node JS, Express JS, Mongo DB y React Native con el tiempo.
+    about: `Desarrollador front-end nacido en Córdoba, Argentina, 3+ años de experiencia en desarrollo web. Especializado en HTML, CSS, JavaScript, TypeScript, Tailwind CSS, StyledComponents, React JS, Vue, y Next JS. Se han completado con éxito varios proyectos web, con un compromiso continuo de aprender y explorar nuevas tecnologías. Además, se ha adquirido experiencia en Node JS, Express JS, Mongo DB y React Native con el tiempo.
     `,
   },
 
@@ -246,6 +246,54 @@ export const info = {
     {
       ENG: {
         id: 4,
+        title: "Quirkies",
+        isFeatured: true,
+        tags:['WEB3', 'STREETWEAR'],
+        carrousel: ['/assets/images/carrousel/Quirkies/1.webp', '/assets/images/carrousel/Quirkies/2.webp'],
+        thumbnail: "/assets/images/quirkies.png",
+        description: "Quirkies is a cutting-edge streetwear brand that emerged from the realm of web 3. This unique brand captures the essence of collectability while infusing it with the latest streetwear trends. They are seamlessly blending technology and streetwear styling, creating a truly one-of-a-kind experience.",
+        techUsed: "To create this platform, cutting-edge technologies were employed, including Next.js for a dynamic and appealing user interface, Tailwind CSS for an elegant and responsive design, TypeScript for enhanced code quality and security, Nest.js for server-side operations, and MongoDB to efficiently manage user information. The combination of these technologies provides a robust and secure user experience.",
+        liveUrl: "https://www.quirkies.io/",
+      },
+      ESP: {
+        id: 4,
+        title: "Quirkies",
+        tags:['WEB3', 'STREETWEAR'],
+        carrousel: ['/assets/images/carrousel/Quirkies/1.webp', '/assets/images/carrousel/Quirkies/2.webp'],
+        isFeatured: true,
+        thumbnail: "/assets/images/quirkies.png",
+        description: "Quirkies es una marca de ropa urbana de vanguardia que surgió del mundo de la Web 3. Esta marca única captura la esencia de lo coleccionable y la fusiona con las últimas tendencias de la moda urbana. Combinan a la perfección la tecnología y el estilo urbano para crear una experiencia verdaderamente única.",
+        techUsed: "Para crear esta plataforma, se emplearon tecnologías de vanguardia, incluyendo Next.js para una interfaz de usuario dinámica y atractiva, Tailwind CSS para un diseño elegante y responsive, TypeScript para garantizar una mayor seguridad y calidad del código, Nest.js para las operaciones del lado del servidor, y MongoDB para gestionar eficazmente la información de los usuarios. La combinación de estas tecnologías proporciona una experiencia de usuario sólida y segura.",
+        liveUrl: "https://www.quirkies.io/",
+      },
+    },
+    {
+      ENG: {
+        id: 5,
+        title: "Game Expo",
+        isFeatured: false,
+        tags:['WEB3', 'GAMING'],
+        carrousel: ['/assets/images/carrousel/GameExpo/1.png', '/assets/images/carrousel/GameExpo/2.png'],
+        thumbnail: "/assets/images/gameExpo.png",
+        description: "Explore the future of Web3 gaming at the first-ever Decentraland Game Expo! Displayed across a colorful virtual fairground, DCLGX will present a must-see arcade of amusement showcasing some of the best games on the blockchain from leading studios and talented creators.",
+        techUsed: "Advanced technologies were utilized to develop this platform, including Next.js for a dynamic and engaging user interface, Tailwind CSS for a sleek and responsive design, TypeScript to ensure code quality and security, Nest.js for handling server-side operations, and MongoDB for efficient user data management. This combination of tools provides a robust and secure user experience.",
+        liveUrl: "https://decentraland.org/gameexpo/",
+      },
+      ESP: {
+        id: 5,
+        title: "Game Expo",
+        tags:['WEB3', 'GAMING'],
+        carrousel: ['/assets/images/carrousel/GameExpo/1.png', '/assets/images/carrousel/GameExpo/2.png'],
+        isFeatured: false,
+        thumbnail: "/assets/images/gameExpo.png",
+        description: "¡Explora el futuro de los juegos Web3 en la primera Decentraland Game Expo! DCLXX se presentará en un colorido recinto ferial virtual, presentará una sala de juegos imperdible que exhibirá algunos de los mejores juegos de la cadena de bloques de los principales estudios y creadores talentosos.",
+        techUsed: "Se emplearon tecnologías avanzadas para desarrollar esta plataforma, entre las cuales destacan Next.js para una interfaz de usuario dinámica y atractiva, Tailwind CSS para un diseño elegante y adaptable, TypeScript para asegurar la calidad y seguridad del código, Nest.js en la gestión de las operaciones del servidor, y MongoDB para administrar eficazmente la información de los usuarios. Esta combinación de herramientas permite ofrecer una experiencia de usuario sólida y segura.",
+        liveUrl: "https://decentraland.org/gameexpo/",
+      },
+    },
+    {
+      ENG: {
+        id: 6,
         title: "VIBE",
         isFeatured: false,
         tags:['E-COMMERCE'],
@@ -256,7 +304,7 @@ export const info = {
         liveUrl: "https://proyecto-final-vibes.vercel.app/",
       },
       ESP: {
-        id: 4,
+        id: 6,
         title: "VIBE",
         isFeatured: false,
         tags:['E-COMMERCE'],
